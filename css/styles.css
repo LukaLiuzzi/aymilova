@@ -96,4 +96,53 @@ img {
   font-size: 2rem;
 }
 
+.main-cointainer__services {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.main-cointainer__services .main-container__services__title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin: 2rem 0;
+}
+.main-cointainer__services .main-container__services__muralismo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin: 2rem 0;
+}
+.main-cointainer__services .main-container__services__muralismo__dropdown-1 .dropdown__title, .main-cointainer__services .main-container__services__muralismo__dropdown-4 .dropdown__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 2rem 0;
+  background-color: #F6DBE7;
+}
+.main-cointainer__services .main-container__services__muralismo__dropdown-2 .dropdown__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 2rem 0;
+  background-color: #E20C6E;
+}
+.main-cointainer__services .main-container__services__muralismo__dropdown-3 .dropdown__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 2rem 0;
+  background-color: #000;
+}
+.main-cointainer__services .dropdown__body {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
