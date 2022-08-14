@@ -38,4 +38,35 @@ img {
   display: flex;
 }
 
+.main-container__index {
+  background-color: #E20C6E;
+}
+.main-container__index .main-container__index__carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 6rem;
+}
+.main-container__index .main-container__index__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.main-container__index .main-container__index__logo img {
+  filter: invert(1);
+}
+.main-container__index .main-container__index__logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  max-width: 12rem;
+  margin: 0 0 4rem;
+  color: #fff;
+}
+
 /*# sourceMappingURL=styles.css.map */
