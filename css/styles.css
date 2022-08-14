@@ -100,15 +100,8 @@ img {
   max-width: 95%;
   margin: 0 auto;
 }
-.main-cointainer__services .main-container__services__title {
-  font-size: 5rem;
-  font-weight: bold;
-  color: #000;
-  text-align: center;
-  margin: 2rem 0;
-}
-.main-cointainer__services .main-container__services__muralismo {
-  font-size: 3.5rem;
+.main-cointainer__services h2 {
+  font-size: 4rem;
   font-weight: bold;
   color: #000;
   text-align: center;
@@ -149,8 +142,8 @@ img {
   max-width: 95%;
   margin: 0 auto 3rem;
 }
-.main-container__services__gestion-cultural h3 {
-  font-size: 2.5rem;
+.main-container__services__gestion-cultural h2 {
+  font-size: 4rem;
   font-weight: bold;
   color: #000;
   text-align: center;
