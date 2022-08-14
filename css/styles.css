@@ -69,4 +69,31 @@ img {
   color: #fff;
 }
 
+.main-container__about-me {
+  background-color: #000;
+}
+.main-container__about-me .main-container__about-me__photo {
+  max-width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container__about-me .main-container__about-me__photo h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 2rem 0;
+}
+.main-container__about-me .main-container__about-me__text p {
+  color: #fff;
+  text-align: left;
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 70%;
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
