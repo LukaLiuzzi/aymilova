@@ -1,0 +1,80 @@
+@media screen and (min-width:900px) {
+    .main-container{
+        .main-container__index{
+            max-width: 1440px;
+            height: 91vh;
+            display: grid;
+            grid-template-areas: "logo foto";
+            grid-template-columns: 2fr fr;
+            justify-content: space-evenly;
+            margin: auto;
+            -webkit-box-shadow: inset 0px 16px 11px -11px rgba(0,0,0,0.29); 
+            box-shadow: inset 0px 16px 11px -11px rgba(0,0,0,0.29);
+            padding: 1rem;
+            .main-container__index__carrousel{
+                grid-area: foto;
+                display: grid;
+                grid-template-areas: "template";
+                z-index: 10;
+                min-height: 80vh;
+                margin-right: 10rem;
+                position: relative;
+                img{
+                    width: 40vh;
+                    z-index: 20;
+                    margin-right: 5rem;
+                    margin-bottom: 15rem;
+                    grid-area: template;
+                    -webkit-box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.22); 
+                    box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.22);
+                }           
+    
+                .deco-1,.deco-2{
+                    position: absolute;
+                    grid-area: template;
+                    contain: "";
+                    width: 20vw;
+                    height: 18vh;
+
+                    
+                }
+                .deco-1{
+                    background-color: $secondaryColor;
+                    top: 20%;
+                    right: 5%;
+                }
+                .deco-2{
+                    left: -5%;
+                    background-color: #fff;
+
+                }
+
+
+            }
+    
+            .main-container__index__logo{
+                grid-area: logo;
+                z-index: 10;
+                img{
+                    width: 18vw;
+                }
+                p{
+                    max-width: 100%;
+                    font-size: 2.5rem;
+                }
+    
+
+            }
+
+            .mancha{
+                width: 100%;
+                position: absolute;
+                max-width: 1440px;
+                margin-left: -1rem;
+                top: 12%;
+                z-index: 1;
+            }
+            
+        }
+    }
+}

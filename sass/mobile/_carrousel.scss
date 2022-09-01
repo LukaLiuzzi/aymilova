@@ -1,0 +1,65 @@
+.dropdown{
+    max-width: 1440px;
+    .dropdown__body__carrousel{
+        position: relative;
+        width: 100%;
+        .carrousel-container{
+            display: flex;
+            .carrousel__list{
+                overflow: hidden;
+
+                .carrousel__element{
+                    max-width: 400px;
+                    margin: 0;
+                    height: 100%;
+                    width: auto;
+                        transition: ease-in-out .5s;
+                        padding: 1rem;
+                    img{
+                        width:350px;
+                        height: 100%;
+
+                        
+                    }
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            //BUTTONS
+            .carrousel__button-preview,
+            .carrousel__button-next{
+                display:block;
+                width: 80px !important;
+                height: 80px;
+                border: none;
+                position: absolute;
+                top:calc(50% - 50px);
+                font-size: 5rem;
+                background:none;
+                color: #fff;
+                opacity: .8;
+                cursor: pointer;
+                transition: ease-in-out .2s;
+
+                &:hover{
+                    opacity: 1;
+                    transform: scale(1.2);
+                   
+                }
+            }
+        
+            .carrousel__button-preview{
+                left: 0;
+                z-index: 100;
+            }
+            .carrousel__button-next{
+                right: 0;
+            }
+        }
+    }
+}
+
+
+
