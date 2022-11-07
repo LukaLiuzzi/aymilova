@@ -1,3 +1,4 @@
+
 //DROPDOWNS
 const dropdowns = document.querySelectorAll('.dropdown__title');
 
@@ -66,37 +67,13 @@ if(document.body.clientWidth <= 900){
 }
 
 
-//MOSTRAR//OCULTAR FOTOS
 
-const carrouselElements = [...document.querySelectorAll('.carrousel__element')];
 
-const showModal = (url) =>{
-    const modal = document.querySelector(".modal-container");
-    let modalImage = modal.getElementsByTagName('img')[0]
-    modalImage.src = url
-    modal.style.display="flex";
-}
 
-const hiddenModal = function() {
-    const modal = this.parentElement;
-    modal.style.display="none"
-}
 
-const showImages = function(){
-    //RECORTAR URL
-    const image = this.getElementsByTagName('img')[0];
-    let url = image.src.split('/');
-    url = `img/${url[5]}`;
-    showModal(url);
-}
 
-carrouselElements.forEach(e => {
-    e.addEventListener('click',showImages);
-})
 
-const crossModal = document.querySelector('.modal__close-modal');
 
-crossModal.addEventListener('click',hiddenModal);
 
 
 

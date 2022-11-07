@@ -1,57 +1,80 @@
 .modal-container{
     width:100vw;
-    height:100vh;
+    height:0;
     position:fixed;
     top:0;
     left:0;
     z-index:10000;
     overflow:hidden;
     background:rgba(0, 0, 0, 0.651);
-    display:none;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    img{
-       
-        width: 100%;
-        height: auto;        
-    }
     p{
-        
-        font-size: 4rem;
-        position: absolute;
-        top: 0;
-        right: 1.5rem;
-        i{
-            border: solid 3px #fff;
-            border-radius: 100%;
-            background-color: #fff;
-
-        }
-
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-}
-
-
-@media screen and (min-width:900px) {
-    .modal-container{
-    img{
-        max-height: 95% !important;
-        width: auto;        
-    }
-    p{
-        position:static;
-        font-size: 10rem;
-        align-self: flex-start;
-        margin-left: 1rem;
-        transition: ease-in-out .2s;
+        align-self: center;
+        justify-self: center;
         cursor: pointer;
-
-        &:hover{
-            transform: scale(1.1);
+        margin-top: 1rem;
+        i{
+            font-size:4rem;
+            margin: 0;
+            background-color: #fff;
+            border-radius: 2rem;
+            outline: solid 3px #fff;
         }
     }
-}
+        .carrousel-container{
+
+            display: flex;
+            margin: 0;
+
+            .carrousel-listx{
+                
+                .carrousel__element{
+                    transition: ease-in-out .5s;
+                    padding: 1rem;
+                    height: 80vh !important;
+                    display: flex;
+                    img{
+                        height: 100%;
+                        width: auto;
+                        
+                    }
+                    
+                }
+            }
+
+            //BUTTONS
+            .carrousel__button-preview,
+            .carrousel__button-next{
+                display:block;
+                width: 80px !important;
+                height: 80px;
+                border: none;
+                position: absolute;
+                top:calc(50% - 50px);
+                font-size: 5rem;
+                background:none;
+                color: #fff;
+                opacity: .8;
+                cursor: pointer;
+                transition: ease-in-out .2s;
+
+         
+            }
+        
+            .carrousel__button-preview{
+                left: 0;
+                z-index: 100;
+            }
+            .carrousel__button-next{
+                right: 0;
+            }
+
+            .carrousel__list_Seminarios, .carrousel__list_Street, .carrousel__list_gestion, .carrousel__list_colaboraciones,.carrousel__list_news,.carrousel__list_trabajos{
+                height: 0;
+                overflow: hidden;
+            }
+        }
+    
 }
